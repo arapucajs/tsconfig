@@ -1,11 +1,11 @@
-# @adonisjs/tsconfig
+# @arapucajs/tsconfig
 
 <hr>
 <br />
 
 <div align="center">
-  <h3>Base TSConfig files</h3>
-  <p>TSConfig config files for AdonisJS (including Inertia) applications or AdonisJS packages.</p>
+  <h3>Arquivos base de TSConfig</h3>
+  <p>Arquivos de configuração TypeScript para aplicações e pacotes ArapucaJS rodando em Node ou Bun.</p>
 </div>
 
 <br />
@@ -16,27 +16,35 @@
 
 </div>
 
-## Installation
+## Instalação
 
-Install the package from the npm registry.
+Instale o pacote via npm (ou bun):
 
 ```sh
-npm i -D @adonisjs/tsconfig@beta
+npm i -D @arapucajs/tsconfig
 
-# Make sure also to install the following packages
-npm i -D typescript ts-node-maintained @swc/core
-```
+# Ou, se preferir Bun:
+bun add -d @arapucajs/tsconfig
+````
 
-## Usage
+> **Dependências sugeridas:**
+>
+> ```sh
+> npm i -D typescript ts-node @swc/core
+> # ou
+> bun add -d typescript ts-node @swc/core
+> ```
 
-After installation, use one of the following base config files.
+## Uso
 
-**For package development**
+Após instalar, use um dos arquivos de configuração base.
+
+**Para desenvolvimento de pacotes:**
 
 ```json
 // tsconfig.json
 {
-  "extends": "@adonisjs/tsconfig/tsconfig.package.json",
+  "extends": "@arapucajs/tsconfig/tsconfig.package.json",
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "./build"
@@ -44,12 +52,12 @@ After installation, use one of the following base config files.
 }
 ```
 
-**For AdonisJS application**
+**Para aplicações ArapucaJS:**
 
 ```json
 // tsconfig.json
 {
-  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "extends": "@arapucajs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "./build"
@@ -57,20 +65,106 @@ After installation, use one of the following base config files.
 }
 ```
 
-**For client-side code inside AdonisJS application**
+**Para código client-side (exemplo para projetos SSR ou SPA):**
 
-```ts
+```json
 // resources/tsconfig.json
 {
-  "extends": "@adonisjs/tsconfig/tsconfig.client.json"
+  "extends": "@arapucajs/tsconfig/tsconfig.client.json"
 }
 ```
 
 <div align="center">
-  <sub>Built with ❤︎ by <a href="https://github.com/Julien-R44">Julien Ripouteau</a> and <a href="https://github.com/thetutlage">Harminder Virk</a>
+  <sub>Feito com ❤ por <a href="https://github.com/seu-usuario">Seu Nome</a> e colaboradores ArapucaJS.</sub>
 </div>
 
-[npm-image]: https://img.shields.io/npm/v/@adonisjs/tsconfig/latest.svg?style=for-the-badge&logo=npm
-[npm-url]: https://www.npmjs.com/package/@adonisjs/tsconfig/v/latest 'npm'
+[npm-image]: https://img.shields.io/npm/v/@arapucajs/tsconfig/latest.svg?style=for-the-badge&logo=npm
+[npm-url]: https://www.npmjs.com/package/@arapucajs/tsconfig/v/latest "npm"
 [license-url]: LICENSE.md
-[license-image]: https://img.shields.io/github/license/adonisjs/tsconfig?style=for-the-badge
+[license-image]: https://img.shields.io/github/license/arapucajs/tsconfig?style=for-the-badge
+
+````
+
+---
+
+### 2. **tsconfig.app.json**
+
+```json
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "./",
+    "outDir": "./build",
+    "types": ["bun-types", "node"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./"],
+  "exclude": ["node_modules", "build", "dist"]
+}
+````
+
+---
+
+### 3. **tsconfig.package.json**
+
+```json
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./build",
+    "rootDir": "./",
+    "types": ["bun-types", "node"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build", "dist", "test", "tests"]
+}
+```
+
+---
+
+### 4. **tsconfig.client.json**
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["DOM", "ES2022"],
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "build", "dist"]
+}
+```
+
+---
+
+### 5. **tsconfig.base.json**
+
+```json
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": false,
+    "allowJs": false,
+    "resolveJsonModule": true
+  }
+}
+```
+
+
