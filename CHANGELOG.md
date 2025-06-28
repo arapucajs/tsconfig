@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/arapucajs/tsconfig/compare/v1.1.0...v1.2.0) (2025-06-28)
+
+
+### Features
+
+* **public:** add npm public for project ([825f172](https://github.com/arapucajs/tsconfig/commit/825f172294fe5d0bdbc3af38577e53ccf2dd2c31))
+
 ## [1.1.0](https://github.com/arapucajs/tsconfig/compare/v1.0.0...v1.1.0) (2025-06-28)
 
 
