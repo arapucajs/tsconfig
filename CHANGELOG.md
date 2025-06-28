@@ -1,0 +1,16 @@
+# Changelog
+
+## 1.0.0 (2025-06-28)
+
+
+### Features
+
+* **ci:** add ci the project estruture ([ee85ddc](https://github.com/arapucajs/tsconfig/commit/ee85ddc061f4a046920c00ec2ca61847ae34ba52))
+* **commitlint:** add commitlint the project struture ([c69cd25](https://github.com/arapucajs/tsconfig/commit/c69cd25e840fb907c7c952e9de6819f44c0f57c3))
+* **deploy:** add deploy at project ([02f9ab8](https://github.com/arapucajs/tsconfig/commit/02f9ab8e2f8aaeba6aacefab71c49eca084b2102))
+
+
+### Bug Fixes
+
+* Delete Apple_Terminal ([742ec73](https://github.com/arapucajs/tsconfig/commit/742ec7381d87fa05e7966f6d9a3f1714dbda068d))
+* **test:** no tests specified ([032755d](https://github.com/arapucajs/tsconfig/commit/032755db64de2b8ec5dc12b053e9666d2def042e))
