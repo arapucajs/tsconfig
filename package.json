@@ -2,6 +2,7 @@
   "name": "@arapucajs/tsconfig",
   "description": "Base TypeScript configuration files for ArapucaJS applications and packages",
   "version": "1.4.1",
+  "type": "module",
   "files": [
     "tsconfig.app.json",
     "tsconfig.client.json",
