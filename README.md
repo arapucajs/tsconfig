@@ -75,7 +75,7 @@ Após instalar, use um dos arquivos de configuração base.
 ```
 
 <div align="center">
-  <sub>Feito com ❤ por <a href="https://github.com/seu-usuario">Seu Nome</a> e colaboradores ArapucaJS.</sub>
+  <sub>Feito com ❤ por <a href="https://github.com/JefteCosta">Jefte</a> e colaboradores ArapucaJS.</sub>
 </div>
 
 [npm-image]: https://img.shields.io/npm/v/@arapucajs/tsconfig/latest.svg?style=for-the-badge&logo=npm

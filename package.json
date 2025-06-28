@@ -1,0 +1,55 @@
+{
+  "name": "@arapucajs/tsconfig",
+  "description": "Base TypeScript configuration files for ArapucaJS applications and packages",
+  "version": "1.4.1",
+  "files": [
+    "tsconfig.app.json",
+    "tsconfig.client.json",
+    "tsconfig.package.json",
+    "tsconfig.base.json"
+  ],
+  "exports": {
+    "./tsconfig.app.json": "./tsconfig.app.json",
+    "./tsconfig.client.json": "./tsconfig.client.json",
+    "./tsconfig.package.json": "./tsconfig.package.json"
+  },
+  "scripts": {
+    "release": "release-it",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit",
+    "commit": "cz"
+  },
+  "homepage": "https://github.com/arapucajs/tsconfig#readme",
+  "bugs": {
+    "url": "https://github.com/arapucajs/tsconfig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arapucajs/tsconfig.git"
+  },
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "adonisjs"
+  ],
+  "author": "Jefte Costa",
+  "contributors": [
+    "JefteCosta <jefteamorim@gmail.com>"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "provenance": true
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
