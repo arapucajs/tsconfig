@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/arapucajs/tsconfig/compare/v1.0.0...v1.1.0) (2025-06-28)
+
+
+### Features
+
+* **npm:** add .npmrc for project ([9a8de09](https://github.com/arapucajs/tsconfig/commit/9a8de09952c6858fde296a5a84438e8434056d09))
+
 ## 1.0.0 (2025-06-28)
 
 
