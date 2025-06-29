@@ -17,6 +17,8 @@ jobs:
         id: release
         with:
           release-type: node
+      - name: Install dependencies
+        run: npm ci
       - name: Build Release Artifact
         if: ${{ steps.release.outputs.release_created }}
         run: |
