@@ -4,11 +4,10 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "rootDir": "./",
-    "outDir": "./build",
     "types": ["bun-types", "node"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true
   },
-  "include": ["./"],
-  "exclude": ["node_modules", "build", "dist", "test", "tests", "test/**/*", "tests/**/*"]
+  "include": ["test", "tests", "**/*.test.ts", "**/*.spec.ts"],
+  "exclude": ["node_modules", "build", "dist"]
 }

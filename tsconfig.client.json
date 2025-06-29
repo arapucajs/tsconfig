@@ -2,11 +2,12 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "lib": ["DOM", "ES2022"],
     "jsx": "react-jsx",
     "esModuleInterop": true
   },
   "include": ["."],
-  "exclude": ["node_modules", "build", "dist"]
+  "exclude": ["node_modules", "build", "dist", "test", "tests", "test/**/*", "tests/**/*"]
 }
