@@ -1,12 +1,16 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ESNext",
     "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "types": ["bun-types", "node"],
+    "moduleResolution": "bundler",
+    "types": ["bun-types", "node", "@types/node"],
     "esModuleInterop": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": {
+      "#src/*": ["src/*"]
+    }
   },
   "include": ["test", "tests", "**/*.test.ts", "**/*.spec.ts"],
   "exclude": ["node_modules", "build", "dist"]
