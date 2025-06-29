@@ -14,8 +14,13 @@ jobs:
         id: release
         with:
           release-type: node
+      - name: Build Release Artifact
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          mkdir -p artifact
+          npm pack --pack-destination artifact
       - name: Upload Release Artifact
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ steps.release.outputs.tag_name }} ./artifact/some-build-artifact.zip
+        run: gh release upload ${{ steps.release.outputs.tag_name }} artifact/*.tgz
