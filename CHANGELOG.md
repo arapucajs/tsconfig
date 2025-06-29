@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/arapucajs/tsconfig/compare/v1.2.1...v1.2.2) (2025-06-29)
+
+
+### Bug Fixes
+
+* **package:** erro ao tentar npm ci para testes ([9a05dc2](https://github.com/arapucajs/tsconfig/commit/9a05dc28e423758d5bb2dc71bf23a0896b54c976))
+* **tests:** erro ao tentar rodar tests em ts por falta de modulo ([bb1aa94](https://github.com/arapucajs/tsconfig/commit/bb1aa940971c223a37627830ec859727895a97e2))
+
 ## [1.2.1](https://github.com/arapucajs/tsconfig/compare/v1.2.0...v1.2.1) (2025-06-29)
 
 
