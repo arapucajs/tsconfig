@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/arapucajs/tsconfig/compare/v1.2.0...v1.2.1) (2025-06-29)
+
+
+### Bug Fixes
+
+* **ci:** handle missing TS files in Bun job ([0ea0add](https://github.com/arapucajs/tsconfig/commit/0ea0add2f2b6b1a6f6c90fcee2434cbf4a97e6c5))
+
 ## [1.2.0](https://github.com/arapucajs/tsconfig/compare/v1.1.0...v1.2.0) (2025-06-28)
 
 
