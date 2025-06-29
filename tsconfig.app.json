@@ -6,8 +6,11 @@
     "moduleResolution": "NodeNext",
     "rootDir": "./",
     "outDir": "./build",
-    "types": ["bun-types", "node"],
-    "esModuleInterop": true
+    "types": ["bun-types", "node", "@types/node"],
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "sourceMap": true
   },
   "include": ["./"],
   "exclude": ["node_modules", "build", "dist", "test", "tests", "test/**/*", "tests/**/*"]
