@@ -64,8 +64,18 @@ jobs:
       - name: Install dependencies using Bun
         run: bun install
       - name: Type-check application config with Bun
-        run: bunx tsc -p tsconfig.app.json --noEmit
+        run: |
+          if git ls-files '*.ts' '*.tsx' | grep -q .; then
+            bun run tsc -p tsconfig.app.json --noEmit
+          else
+            echo "Nenhum arquivo TypeScript encontrado, pulando verificação"
+          fi
       - name: Type-check package config with Bun
-        run: bunx tsc -p tsconfig.package.json --noEmit
+        run: |
+          if git ls-files '*.ts' '*.tsx' | grep -q .; then
+            bun run tsc -p tsconfig.package.json --noEmit
+          else
+            echo "Nenhum arquivo TypeScript encontrado, pulando verificação"
+          fi
       - name: Run tests with Bun
         run: bun test
