@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/arapucajs/tsconfig/compare/v1.3.0...v1.3.1) (2025-06-29)
+
+
+### Bug Fixes
+
+* **erelease:** erro de ci por nao intalar o ci ([aa2f4c4](https://github.com/arapucajs/tsconfig/commit/aa2f4c484112eb4db591ecc05ef94e12de24d129))
+
 ## [1.3.0](https://github.com/arapucajs/tsconfig/compare/v1.2.2...v1.3.0) (2025-06-29)
 
 
