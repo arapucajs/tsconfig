@@ -52,8 +52,12 @@ jobs:
           npx tsc -p tsconfig.app.json --noEmit
           npx tsc -p tsconfig.package.json --noEmit
           npx tsc -p tsconfig.client.json --noEmit
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
       - name: Run tests
-        run: npm test
+        run: bun test
 
   bun-check:
     needs: tests
