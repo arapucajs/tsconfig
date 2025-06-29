@@ -19,7 +19,7 @@
     "prepare": "husky",
     "commitlint": "commitlint --edit",
     "commit": "cz",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "bun test"
   },
   "homepage": "https://github.com/arapucajs/tsconfig#readme",
   "bugs": {
