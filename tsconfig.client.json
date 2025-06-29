@@ -1,11 +1,7 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "lib": ["DOM", "ESNext","DOM.Iterable","ES2022"],
-    "jsx": "react-jsx",
-    "esModuleInterop": true
-  },
-  "include": ["."],
-  "exclude": ["node_modules", "build", "dist", "test", "tests", "test/**/*", "tests/**/*"]
+  }
 }
