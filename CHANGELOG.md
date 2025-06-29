@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/arapucajs/tsconfig/compare/v1.2.2...v1.3.0) (2025-06-29)
+
+
+### Features
+
+* **config:** add tsconfig preset for tests ([777fb24](https://github.com/arapucajs/tsconfig/commit/777fb2484460d6e023cb4a59e5f57d48c7668edc))
+
+
+### Bug Fixes
+
+* add newline at end of ignore files ([77bdcaa](https://github.com/arapucajs/tsconfig/commit/77bdcaac2f162bfb1abcae80faf9a7ebc75a4524))
+* build artifact before release upload ([1e87d5a](https://github.com/arapucajs/tsconfig/commit/1e87d5a0dccbe82f34b736b1bf345cc4566121fb))
+* generate release artifact before upload ([7c7909a](https://github.com/arapucajs/tsconfig/commit/7c7909adc24e90620bb09c7183146f29ca1307ec))
+
 ## [1.2.2](https://github.com/arapucajs/tsconfig/compare/v1.2.1...v1.2.2) (2025-06-29)
 
 
