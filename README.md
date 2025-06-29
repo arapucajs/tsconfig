@@ -74,6 +74,15 @@ Após instalar, use um dos arquivos de configuração base.
 }
 ```
 
+**Para testes:**
+
+```json
+// tsconfig.json
+{
+  "extends": "@arapucajs/tsconfig/tsconfig.test.json"
+}
+```
+
 <div align="center">
   <sub>Feito com ❤ por <a href="https://github.com/JefteCosta">Jefte</a> e colaboradores ArapucaJS.</sub>
 </div>
@@ -154,7 +163,27 @@ Após instalar, use um dos arquivos de configuração base.
 
 ---
 
-### 5. **tsconfig.base.json**
+### 5. **tsconfig.test.json**
+
+```json
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["bun-types", "node"],
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": ["test", "tests", "**/*.test.ts", "**/*.spec.ts"],
+  "exclude": ["node_modules", "build", "dist"]
+}
+```
+
+---
+
+### 6. **tsconfig.base.json**
 
 ```json
 {
