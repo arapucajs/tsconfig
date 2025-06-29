@@ -47,6 +47,11 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Validate TypeScript configs
+        run: |
+          npx tsc -p tsconfig.app.json --noEmit
+          npx tsc -p tsconfig.package.json --noEmit
+          npx tsc -p tsconfig.client.json --noEmit
       - name: Run tests
         run: npm test
 
