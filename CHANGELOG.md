@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/arapucajs/tsconfig/compare/v1.3.1...v1.4.0) (2025-06-29)
+
+
+### Features
+
+* add issue templates and CI workflow ([9e0ebbe](https://github.com/arapucajs/tsconfig/commit/9e0ebbe8ae0b63035b1e6234f6abb3febb9a3b4e))
+
 ## [1.3.1](https://github.com/arapucajs/tsconfig/compare/v1.3.0...v1.3.1) (2025-06-29)
 
 
