@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/arapucajs/tsconfig/compare/v1.4.0...v1.5.0) (2025-06-30)
+
+
+### Features
+
+* add publish with npm and github pkg ([#38](https://github.com/arapucajs/tsconfig/issues/38)) ([3c67230](https://github.com/arapucajs/tsconfig/commit/3c67230cd5e0bf517ace7bc911e69dafeff7e17d))
+
 ## [1.4.0](https://github.com/arapucajs/tsconfig/compare/v1.3.1...v1.4.0) (2025-06-29)
 
 
