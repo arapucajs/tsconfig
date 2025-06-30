@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/arapucajs/tsconfig/compare/v1.6.0...v1.6.1) (2025-06-30)
+
+
+### Bug Fixes
+
+* alterando npmrc para correcao de bugs ([#41](https://github.com/arapucajs/tsconfig/issues/41)) ([6341ee0](https://github.com/arapucajs/tsconfig/commit/6341ee092bda9191ed40520639acb5f5a9eaae59))
+
 ## [1.6.0](https://github.com/arapucajs/tsconfig/compare/v1.5.0...v1.6.0) (2025-06-30)
 
 
