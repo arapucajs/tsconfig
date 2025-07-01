@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/arapucajs/tsconfig/compare/v1.6.1...v1.6.2) (2025-07-01)
+
+
+### Bug Fixes
+
+* corrigindo bugs ([#48](https://github.com/arapucajs/tsconfig/issues/48)) ([8f73cba](https://github.com/arapucajs/tsconfig/commit/8f73cba75732b9bb57cdc5bc2fea006a34c797cf))
+
 ## [1.6.1](https://github.com/arapucajs/tsconfig/compare/v1.6.0...v1.6.1) (2025-06-30)
 
 
