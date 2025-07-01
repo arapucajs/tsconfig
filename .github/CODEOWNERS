@@ -1,1 +1,6 @@
-* @JefteCosta @jefte-bot-pr @jefte-bot-issue
+# default owners
+* @JefteCosta 
+# jefte-bot
+/src/ @jefte-bot
+# jefte-pr
+/test/ @jefte-pr
