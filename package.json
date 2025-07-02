@@ -1,7 +1,7 @@
 {
   "name": "@arapucajs/tsconfig",
   "description": "Base TypeScript configuration files for ArapucaJS applications and packages",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "type": "module",
   "files": [
     "tsconfig.app.json",
@@ -56,10 +56,6 @@
     "swc": "^1.0.11"
   },
   "peerDependencies": {
-    "@types/bun": "^1.2.17",
-    "bun-types": "^1.2.17"
-  },
-  "dependencies": {
     "@types/bun": "^1.2.17",
     "bun-types": "^1.2.17"
   },

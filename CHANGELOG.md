@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/arapucajs/tsconfig/compare/v1.6.2...v1.6.3) (2025-07-02)
+
+
+### Bug Fixes
+
+* remove trailing comma in client tsconfig ([#52](https://github.com/arapucajs/tsconfig/issues/52)) ([a4ac000](https://github.com/arapucajs/tsconfig/commit/a4ac0005d79e509e61fd7c878463769f0f244433))
+
 ## [1.6.2](https://github.com/arapucajs/tsconfig/compare/v1.6.1...v1.6.2) (2025-07-01)
 
 
