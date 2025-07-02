@@ -169,10 +169,10 @@ Após instalar, use um dos arquivos de configuração base.
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "types": ["bun-types", "node"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["bun-types", "node", "@types/node"],
     "esModuleInterop": true,
     "allowImportingTsExtensions": true
   },
