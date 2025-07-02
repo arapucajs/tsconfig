@@ -27,6 +27,8 @@ npm i -D @arapucajs/tsconfig
 bun add -d @arapucajs/tsconfig
 ````
 
+> Recomendamos utilizar o **Bun** na versão 1.2 ou superior.
+
 > **Dependências sugeridas:**
 >
 > ```sh
@@ -81,6 +83,12 @@ Após instalar, use um dos arquivos de configuração base.
 {
   "extends": "@arapucajs/tsconfig/tsconfig.test.json"
 }
+```
+
+### Rodando os testes com Bun
+
+```sh
+bun test
 ```
 
 <div align="center">
