@@ -1,4 +1,4 @@
 export const hello = (nome: string): string => {
-  return `Olá, ${nome}!`;
+  return `Hello, ${nome}!`;
 };
-console.log(hello('Mundo'));
+console.log(hello('World'));
