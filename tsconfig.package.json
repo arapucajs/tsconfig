@@ -2,6 +2,8 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "declaration": true,
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
     "removeComments": false,
     "types": ["bun-types", "node", "@types/node"],
     "esModuleInterop": true
