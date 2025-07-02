@@ -197,3 +197,8 @@ Após instalar, use um dos arquivos de configuração base.
 ```
 
 
+
+## Como contribuir
+
+Contribuições são bem-vindas! Consulte o [CONTRIBUTING.md](./CONTRIBUTING.md) para seguir o padrão de **Conventional Commits**. Dessa forma o Release Please poderá gerar versões automaticamente.
+
