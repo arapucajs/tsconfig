@@ -1,0 +1,67 @@
+{
+  "name": "@arapucajs/tsconfig",
+  "description": "Base TypeScript configuration files for ArapucaJS applications and packages",
+  "version": "1.6.3",
+  "type": "module",
+  "files": [
+    "tsconfig.app.json",
+    "tsconfig.client.json",
+    "tsconfig.package.json",
+    "tsconfig.test.json",
+    "tsconfig.base.json"
+  ],
+  "exports": {
+    "./tsconfig.app.json": "./tsconfig.app.json",
+    "./tsconfig.client.json": "./tsconfig.client.json",
+    "./tsconfig.package.json": "./tsconfig.package.json",
+    "./tsconfig.test.json": "./tsconfig.test.json"
+  },
+  "imports": {
+    "#src": "./src/*.js"
+  },
+  "scripts": {
+    "release": "release-it",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit",
+    "commit": "cz",
+    "test": "bun test"
+  },
+  "homepage": "https://github.com/arapucajs/tsconfig#readme",
+  "bugs": {
+    "url": "https://github.com/arapucajs/tsconfig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arapucajs/tsconfig.git"
+  },
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "arapucajs"
+  ],
+  "author": "Jefte Costa",
+  "contributors": [
+    "JefteCosta <jefteamorim@gmail.com>"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "provenance": true
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "swc": "^1.0.11"
+  },
+  "peerDependencies": {
+    "@types/bun": "^1.2.17",
+    "bun-types": "^1.2.17"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

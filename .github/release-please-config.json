@@ -1,0 +1,3 @@
+{
+  "pullRequestTitlePattern": "chore${scope}: release${component} ${version}"
+}

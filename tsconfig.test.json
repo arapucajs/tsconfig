@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["bun-types", "node", "@types/node"],
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": {
+      "#src/*": ["src/*"]
+    }
+  },
+  "include": ["test", "tests", "**/*.test.ts", "**/*.spec.ts"],
+  "exclude": ["node_modules", "build", "dist"]
+}

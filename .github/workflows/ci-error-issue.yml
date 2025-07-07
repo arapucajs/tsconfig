@@ -1,0 +1,24 @@
+name: Abrir issue em falha de CI
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
+
+jobs:
+  abrir_issue:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Criar issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Falha na CI em ${{ github.event.workflow_run.head_branch }}"
+          content-filepath: .github/ISSUE_TEMPLATE/ci_failure.md
+          labels: ci,bug
+          token: ${{ secrets.GH_PAT }}
