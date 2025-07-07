@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2025-07-07)
+
+
+### Features
+
+* **init:** commit inicial para versao ([8599edc](https://github.com/arapucajs/tsconfig/commit/8599edcc1bb97929d1b4a3387ce258f58217a2ba))
+
 ## [1.6.3](https://github.com/arapucajs/tsconfig/compare/v1.6.2...v1.6.3) (2025-07-02)
 
 
